@@ -6,6 +6,13 @@ body{
         .login-card{
             width: 400px;
             border-radius: 20px;
+            margin-top: 100px;
+        }
+
+        .login-card1{
+            width: 400px;
+            border-radius: 20px;
+            margin-top: 75px;
         }
 
         .profile-icon{

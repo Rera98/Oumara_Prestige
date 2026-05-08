@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oumara Prestige</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="position-fixed w-100" style="z-index: 10;">
+
+        <nav class="navbar navbar-expand-lg navbar-dark w-100 bg_2 shadow">
+            <div class="container">
+                <div class="d-flex gap-3">
+                    <div class="bg_1 text-white fw-bold fs-5 p-2 rounded-5">OP</div>
+                    <a class="navbar-brand text-dark fw-bold" href="#">Oumara Prestige</a>
+                </div>
+
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNav" onclick="toggleMenu()">
+                    <div class="menu-btn" id="menuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+
+                <div class="collapse navbar-collapse text-center" id="mainNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
+                        <li class="nav-item"><a class="nav-link text-dark bg1_1" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="apropos.html">A propos</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="reservation.html">Réservation</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="contacts.html">Contact</a></li>
+                    </ul>
+
+                    <div class="fans d-flex align-items-center justify-content-center gap-3">
+                        <i class="bi bi-person-fill text-white"></i>
+                        <i class="bi bi-cart-fill text-white"></i>
+                        <i class="bi bi-search text-white"></i>
+                        <a href="connexion.html" class="btn  text-white bg_3 rounded-5 fs-7">Connexion</a>
+                        <a href="inscription.html" class="btn text-white bg_1 rounded-5 fs-7">S'inscrire</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+</body>
+</html>

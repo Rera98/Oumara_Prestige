@@ -32,6 +32,16 @@
 .bg_8{
     background-color: #535454;
 }
+.bg_9{
+    background-color: #943aec;
+}
+.bg_10{
+    background-color: #d92a2b;
+}
+.bg_11{
+    background-color: #4e48ea;
+}
+
 .bg_4_g{
     background: linear-gradient(130deg,  #f0fdf5, #fff);
 }
@@ -70,7 +80,7 @@
 .fs-7 {
   font-size: 0.80rem !important;
 }
-.fs_8{
+.fs-8{
     font-size: 2.5em;
 }
 .div{

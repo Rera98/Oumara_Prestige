@@ -107,5 +107,19 @@
             color: white;
             border-radius: 50%;
             font-size: 20px;
-            
+}
+
+.btn-login:hover{
+            background-color: #be8a00;
+            color: white;
+}
+
+.btn-login{
+            background-color: #d89d00;
+            color: white;
+}
+ .signup-link{
+            color: #d89d00;
+            text-decoration: none;
+            font-weight: 600;
         }

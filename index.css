@@ -41,6 +41,12 @@
 .bg_11{
     background-color: #4e48ea;
 }
+.bg_12{
+    background-color: #fdfcea;
+}
+.bg_13{
+    background-color: #ccd0d7;
+}
 
 .bg_4_g{
     background: linear-gradient(130deg,  #f0fdf5, #fff);
@@ -79,6 +85,9 @@
 }
 .fs-7 {
   font-size: 0.80rem !important;
+}
+.fs-9 {
+  font-size: 0.70rem !important;
 }
 .fs-8{
     font-size: 2.5em;
@@ -122,4 +131,15 @@
             color: #d89d00;
             text-decoration: none;
             font-weight: 600;
+        }
+
+        .signup-link{
+            color: #d89d00;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .btn-login{
+            background-color: #d89d00;
+            color: white;
         }

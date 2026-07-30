@@ -1,7 +1,5 @@
 .bg_1{
     background: linear-gradient(130deg, #cb8e00, #e5ac01);
-    /* background-color: #cb8e00;
-    background-color: #e5ac01; */
 }
 .bg1_1{
     color: #cb8e00;
@@ -18,8 +16,6 @@
 
 .bg_3{
     background: linear-gradient(130deg,  #6e7681, #939ba4);
-    /* background-color: #6e7681;
-    background-color: #939ba4; */
 }
 .bg_4{
     background-color: #1db654;
@@ -68,34 +64,61 @@
 .nav-link:hover{
     color: #cb8e00 !important;
 }
-.hero img {
-  height: 100vh;
-  width: 100vw;
-  color: #fff;
-  transition: transform .6s ease, top .6s ease;
 
+/* ===== HEADER FIXE : on compense la hauteur sur le contenu ===== */
+main{
+    padding-top: 76px; /* hauteur approx. de la navbar */
 }
+
+/* ===== HERO responsive =====
+   Avant : height:100vh; width:100vw sur l'image -> déformation garantie.
+   On passe par un conteneur de hauteur fluide + object-fit: cover. */
+.hero{
+    width: 100%;
+    overflow: hidden;
+}
+.hero .d-flex{
+    width: 100%;
+    height: 70vh;
+    min-height: 380px;
+}
+.hero-img{
+    width: 100%;
+    height: 70vh;
+    min-height: 380px;
+    object-fit: cover;
+    color: #fff;
+    transition: transform .6s ease, top .6s ease;
+}
+@media (min-width: 992px){
+    .hero .d-flex,
+    .hero-img{
+        height: 90vh;
+    }
+}
+
 .bg-img {
-    /* max-width: 100%; */
-    /* min-width: 100%; */
+    /* réservé pour usage futur */
 }
-.bg-img{
-    /* background-image: url(./assets/photo-1590273089302-ebbc53986b6e.jpeg); */
-    /* background-size: contain; */
-    /* background-repeat: no-repeat; */
-}
+
 .cerc{
     width: 45px;
+    flex-shrink: 0;
 }
+
 .fs-7 {
   font-size: 0.80rem !important;
 }
 .fs-9 {
   font-size: 0.70rem !important;
 }
+
+/* ===== fs-8 : taille de titre du hero, désormais fluide ===== */
 .fs-8{
-    font-size: 2.5em;
+    font-size: clamp(1.4rem, 5vw, 2.5rem);
+    line-height: 1.2;
 }
+
 .div{
     width: 20px;
     height: 20px;
@@ -105,13 +128,37 @@
     z-index: 20;
 }
 
-.login-card1{
-    width: 800px;
-    border-radius: 20px;
-    padding: 100px;
-    /* margin-top: 100px; */
+/* ===== Bouton "Réserver maintenant" : w-25 forçait une largeur
+   trop étroite sur mobile. On passe par une largeur intrinsèque + max ===== */
+.hero-btn{
+    width: auto;
+    max-width: 100%;
+    white-space: nowrap;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+@media (max-width: 575.98px){
+    .hero-btn{
+        font-size: 0.75rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .lead.w-75{
+        width: 92% !important;
+    }
 }
 
+.login-card1{
+    width: 100%;
+    max-width: 800px;
+    border-radius: 20px;
+    padding: 100px;
+}
+@media (max-width: 767.98px){
+    .login-card1{
+        padding: 40px 20px;
+    }
+}
 
 .profile-icon{
     width: 40px;
@@ -131,19 +178,9 @@
     background-color: #d89d00;
     color: white;
 }
-.signup-link{
-    color: #d89d00;
-    text-decoration: none;
-    font-weight: 600;
-}
 
 .signup-link{
     color: #d89d00;
     text-decoration: none;
     font-weight: 600;
 }
-
-.btn-login{
-    background-color: #d89d00;
-    color: white;
- }

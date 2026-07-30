@@ -16,7 +16,7 @@
 </head>
 <body>
     
-    <header class="position-fixed w-100" style="z-index: 10;">
+    <header class="position-fixed w-100" style="z-index: 100;">
 
         <nav class="navbar navbar-expand-lg navbar-dark w-100 bg_2 shadow">
             <div class="container">
@@ -25,16 +25,14 @@
                     <a class="navbar-brand text-dark fw-bold" href="#">Oumara Prestige</a>
                 </div>
 
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#mainNav" onclick="toggleMenu()">
                     <div class="menu-btn" id="menuBtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span><i class="bi bi-list fs-3 bis"></i></span>
                     </div>
                 </button>
 
-                <div class="collapse navbar-collapse text-center" id="mainNav">
+                <div class="collapse navbar-collapse" id="mainNav">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
                         <li class="nav-item"><a class="nav-link text-dark bg1_1" href="index.html">Accueil</a>
                         </li>
@@ -43,12 +41,13 @@
                         <li class="nav-item"><a class="nav-link active text-dark" href="contacts.html">Contact</a></li>
                     </ul>
 
-                    <div class="fans d-flex align-items-center justify-content-center gap-3">
-                        <i class="bi bi-person-fill text-white"></i>
-                        <i class="bi bi-cart-fill text-white"></i>
-                        <i class="bi bi-search text-white"></i>
-                        <a href="connexion.html" class="btn  text-white bg_3 rounded-5 fs-7">Connexion</a>
-                        <a href="inscription.html" class="btn text-white bg_1 rounded-5 fs-7">S'inscrire</a>
+                    <div class="fans d-flex   gap-3 flex-column flex-lg-row">
+                        
+                        <a href="connexion.html" class="btn  text-white bg_3 rounded-5 fs-7 d-none d-lg-block">Connexion</a>
+                        <a href="inscription.html" class="btn text-white bg_1 rounded-5 fs-7 d-none d-lg-block">S'inscrire</a>
+
+                        <a href="connexion.html" class="btn nav-link text-dark rounded-5 d-block d-lg-none text-start">Connexion</a>
+                        <a href="inscription.html" class="btn nav-link text-dark rounded-5 d-block d-lg-none text-start">S'inscrire</a>
                     </div>
                 </div>
 
@@ -71,9 +70,9 @@
 
         </section>
 
-        <section class="container d-flex gap-4 justify-content-center mt-5 mb-5">
+        <section class="container d-flex flex-column flex-lg-row gap-4 justify-content-center mt-5 mb-5">
 
-            <div class="card shadow border-0 p-4 login-card col-6" >
+            <div class="card shadow border-0 p-4 login-card col-lg-6" >
 
                 <!-- Title -->
                 <p class="fw-bold fs-4">Envoyez-nous un message</p>
@@ -149,7 +148,7 @@
 
             </div>
 
-            <div class=" col-6">
+            <div class=" col-lg-6">
                 <div class="card shadow border-0 p-4 login-card">
                     <div>
                         <p class="fs-4 fw-bold">Nos coordonnées</p>
@@ -295,5 +294,6 @@
         </section>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

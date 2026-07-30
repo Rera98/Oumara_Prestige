@@ -17,7 +17,7 @@
 
 <body>
 
-    <header class="position-fixed w-100" style="z-index: 10;">
+    <header class="position-fixed w-100" style="z-index: 100;">
 
         <nav class="navbar navbar-expand-lg navbar-dark w-100 bg_2 shadow">
             <div class="container">
@@ -26,16 +26,14 @@
                     <a class="navbar-brand text-dark fw-bold" href="#">Oumara Prestige</a>
                 </div>
 
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#mainNav" onclick="toggleMenu()">
                     <div class="menu-btn" id="menuBtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span><i class="bi bi-list fs-3 bis"></i></span>
                     </div>
                 </button>
 
-                <div class="collapse navbar-collapse text-center" id="mainNav">
+                <div class="collapse navbar-collapse" id="mainNav">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
                         <li class="nav-item"><a class="nav-link active text-dark bg1_1" href="index.html">Accueil</a>
                         </li>
@@ -44,12 +42,13 @@
                         <li class="nav-item"><a class="nav-link text-dark" href="contacts.html">Contact</a></li>
                     </ul>
 
-                    <div class="fans d-flex align-items-center justify-content-center gap-3">
-                        <i class="bi bi-person-fill text-white"></i>
-                        <i class="bi bi-cart-fill text-white"></i>
-                        <i class="bi bi-search text-white"></i>
-                        <a href="connexion.html" class="btn  text-white bg_3 rounded-5 fs-7">Connexion</a>
-                        <a href="inscription.html" class="btn text-white bg_1 rounded-5 fs-7">S'inscrire</a>
+                    <div class="fans d-flex   gap-3 flex-column flex-lg-row">
+                        
+                        <a href="connexion.html" class="btn  text-white bg_3 rounded-5 fs-7 d-none d-lg-block">Connexion</a>
+                        <a href="inscription.html" class="btn text-white bg_1 rounded-5 fs-7 d-none d-lg-block">S'inscrire</a>
+
+                        <a href="connexion.html" class="btn nav-link text-dark rounded-5 d-block d-lg-none text-start">Connexion</a>
+                        <a href="inscription.html" class="btn nav-link text-dark rounded-5 d-block d-lg-none text-start">S'inscrire</a>
                     </div>
                 </div>
 
@@ -72,7 +71,7 @@
                 <div class="text-white text-center lead position-absolute w-75">
                     <p class=" fw-bold fs_8 m-0">Bienvenue chez Oumara Prestige</p>
                     <p class="m-0">Votre voyage spirituel vers la mecque, organiser avec excellence</p>
-                    <a href="#" class="btn text-white bg_1 rounded-5 fs-7 w-25 mt-5">Réserver maintenant</a>
+                    <a href="#" class="btn text-white bg_1 rounded-5 fs-7  w-lg-25 mt-5">Réserver maintenant</a>
                 </div>
             </div>
             <div class="position-absolute top-0 start-0 w-100 h-100  bg_3 opacity-50"></div> 
@@ -115,7 +114,7 @@
                 <div class="row gap-3 g-3 d-flex justify-content-center ">
                     <div class="col-11 col-md-6 col-lg-5 p-3 shadow rounded-3">
                         <div class="d-flex gap-3 mb-2">
-                        <div class="bg_1 cerc p-2 rounded-5 d-flex justify-content-center mb-2 fs-7 text-white fw-bold">FZ</div>
+                        <div class="bg_1 cerc p-2 rounded-5 d-flex justify-content-center  fs-6 text-white fw-bold m-0 p-O border border-warning">FZ</div>
                         <div><p class="m-0 fs-7 fw-bold">Fatima.Z</p><p class="m-0 fs-7">Mars 2024</p></div>
                         </div>
                         <p class="fs-7">" Une Expérience inoubliable. L'organisation était parfaite et l'équipe très professionnelle. Je recommande vivement Oumara Prestige."</p>
@@ -124,7 +123,7 @@
 
                     <div class="col-11 col-md-6 col-lg-5 p-3 shadow rounded-3">
                         <div class="d-flex gap-3 mb-2">
-                        <div class="bg_4 cerc p-2 rounded-5 d-flex justify-content-center mb-2 fs-7 text-white fw-bold">AM</div>
+                        <div class="bg_4 cerc p-2 rounded-5 d-flex justify-content-center mb-2 fs-6 text-white fw-bold">AM</div>
                         <div><p class="m-0 fs-7 fw-bold">Ahmed.M</p><p class="m-0 fs-7">Janvier 2024</p></div>
                         </div>
                         <p class="fs-7">" Merci à toute l'équipe pour ce voyage spirituel mémorable. Tout était bien planifié, de l'hébergement aux transports."</p>

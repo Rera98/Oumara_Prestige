@@ -17,7 +17,7 @@
 </head>
 <body>
     
-    <header class="position-fixed w-100" style="z-index: 10;">
+    <header class="position-fixed w-100" style="z-index: 100;">
 
         <nav class="navbar navbar-expand-lg navbar-dark w-100 bg_2 shadow">
             <div class="container">
@@ -26,30 +26,29 @@
                     <a class="navbar-brand text-dark fw-bold" href="#">Oumara Prestige</a>
                 </div>
 
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#mainNav" onclick="toggleMenu()">
                     <div class="menu-btn" id="menuBtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span><i class="bi bi-list fs-3 bis"></i></span>
                     </div>
                 </button>
 
-                <div class="collapse navbar-collapse text-center" id="mainNav">
+                <div class="collapse navbar-collapse" id="mainNav">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
                         <li class="nav-item"><a class="nav-link text-dark bg1_1" href="index.html">Accueil</a>
                         </li>
                         <li class="nav-item"><a class="nav-link text-dark" href="apropos.html">A propos</a></li>
-                        <li class="nav-item"><a class="nav-link  active text-dark" href="reservation.html">Réservation</a></li>
+                        <li class="nav-item"><a class="nav-link active text-dark" href="reservation.html">Réservation</a></li>
                         <li class="nav-item"><a class="nav-link text-dark" href="contacts.html">Contact</a></li>
                     </ul>
 
-                    <div class="fans d-flex align-items-center justify-content-center gap-3">
-                        <i class="bi bi-person-fill text-white"></i>
-                        <i class="bi bi-cart-fill text-white"></i>
-                        <i class="bi bi-search text-white"></i>
-                        <a href="connexion.html" class="btn  text-white bg_3 rounded-5 fs-7">Connexion</a>
-                        <a href="inscription.html" class="btn text-white bg_1 rounded-5 fs-7">S'inscrire</a>
+                    <div class="fans d-flex   gap-3 flex-column flex-lg-row">
+                        
+                        <a href="connexion.html" class="btn  text-white bg_3 rounded-5 fs-7 d-none d-lg-block">Connexion</a>
+                        <a href="inscription.html" class="btn text-white bg_1 rounded-5 fs-7 d-none d-lg-block">S'inscrire</a>
+
+                        <a href="connexion.html" class="btn nav-link text-dark rounded-5 d-block d-lg-none text-start">Connexion</a>
+                        <a href="inscription.html" class="btn nav-link text-dark rounded-5 d-block d-lg-none text-start">S'inscrire</a>
                     </div>
                 </div>
 
@@ -59,12 +58,12 @@
     </header>
 
     <main>
-        <section class="w-100 ">
+        <section class="w-100">
 
             <div class="navbar w-100 bg_1 shadow p-5 ">
                 <div class="container justify-content-center">
                     <div class="p-3">
-                        <div class=" text-white fw-bold fs-1  ">Réservez votre Oumara</div>
+                        <div class=" text-white fw-bold fs-1 text-center ">Réservez votre Oumara</div>
                         <div class="fs-6 text-white text-center">Commencez votre voyage spirituel avec nous</div>
                     </div>
                 </div>
@@ -89,9 +88,9 @@
                 <p class="text-center text-muted mb-4">
                     Connectez-vous à votre compte
                 </p> -->
-                <div class="d-flex gap-2">
+                <div class="d-flex flex-column flex-lg-row gap-2">
                     <!-- Nom -->
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-lg-6">
                         <label class="form-label fw-semibold">Nom</label>
 
                         <input type="text"
@@ -100,7 +99,7 @@
                     </div>
 
                     <!-- Prenom -->
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-lg-6">
                         <label class="form-label fw-semibold">Prenom</label>
 
                         <input type="text"
@@ -109,9 +108,9 @@
                     </div>
                 </div>
 
-                <div class="d-flex gap-2">
+                <div class="d-flex flex-column flex-lg-row gap-2">
                     <!-- Email -->
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-lg-6">
                         <label class="form-label fw-semibold">Email</label>
 
                         <input type="email"
@@ -120,7 +119,7 @@
                     </div>
 
                     <!-- Téléphone -->
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-lg-6">
                         <label class="form-label fw-semibold">Telephone</label>
 
                         <input type="email"
@@ -140,9 +139,9 @@
                     <h3>Détails du voyage</h3>
                 </div>
 
-                <div class="d-flex gap-2">
+                <div class="d-flex flex-column flex-lg-row gap-2">
                     <!-- Type de formule -->
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-lg-6">
                         <label class="form-label fw-semibold">
                             Type de formule
                         </label>
@@ -153,7 +152,7 @@
                     </div>
 
                     <!-- Durée du séjour -->
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-lg-6">
                         <label class="form-label fw-semibold">
                         Durée du séjour
                         </label>
@@ -165,9 +164,9 @@
 
                 </div>
 
-                <div class="d-flex gap-2">
+                <div class="d-flex flex-column flex-lg-row gap-2">
                     <!-- Date de départ -->
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-lg-6">
                         <label class="form-label fw-semibold">Date de départ</label>
 
                         <input type="date"
@@ -176,7 +175,7 @@
                     </div>
 
                     <!-- Nombre de personnes -->
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-lg-6">
                         <label class="form-label fw-semibold">Nombres de personnes</label>
 
                         <input type="email"
@@ -336,5 +335,55 @@
         </section>
     </main>
 
+    <footer>
+        <section class=" container-fluid bg_7">
+            <div class="container">
+
+                <div class="row gap-3 g-3 d-flex justify-content-center mb-4 ">
+                    <div class="col-11 col-md-6 col-lg-3 p-3">
+                        <div class=""><p class="bg1_1">Oumara Prestige</p></div>
+                        <p class="fs-7 bg2_2">Votre partenaire de confiance pour un voyage spirituel inoubliable vers la Mecque.</p>
+
+                    </div>
+
+                    <div class="col-11 col-md-6 col-lg-3 p-3">
+                        <div class=""><p class="text-white fs-7">Liens Rapides</p></div>
+                        <div>
+                            <ul class="navbar-nav mx-auto fs-7">
+                                <li class="nav-item"><a class="nav-link bg2_2 p-1" href="">Accueil</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link bg2_2 p-1" href="">A propos</a></li>
+                                <li class="nav-item"><a class="nav-link bg2_2 p-1" href="">Réservation</a></li>
+                                <li class="nav-item"><a class="nav-link bg2_2 p-1" href="">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-11 col-md-6 col-lg-3 p-3">
+                        <div class=""><p class="text-white fs-7">Contact</p></div>
+                        <div class="bg2_2 fs-7 p-1"><i class="bi bi-telephone-fill"></i> +227 23 45 67 89</div>
+                        <div class="bg2_2 fs-7 p-1"><i class="bi bi-envelope-fill"></i> contact@oumaraprestige.ne</div>
+                        <div class="bg2_2 fs-7 p-1"><i class="bi bi-geo-fill"></i> Niamey, Niger</div>
+
+                    </div>
+
+                    <div class="col-11 col-md-6 col-lg-2 p-3 ">
+                        <div class=""><p class="text-white fs-7">Suivez-nous</p></div>
+                        <div class="d-flex gap-3">
+                            <div class="bg_8 fs-7 p-1 div d-flex justify-content-center align-items-center "><i class="bi bi-facebook"></i></div>
+                            <div class="bg_8 fs-7  p-1 div d-flex justify-content-center align-items-center"><i class="bi bi-linkedin"></i></div>
+                            <div class="bg_8 fs-7  p-1 div d-flex justify-content-center align-items-center"><i class="bi bi-camera-fill"></i></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bg2_2 fs-7 d-flex justify-content-center"><p>&copy; 2024 Oumara Prestige. Tous droits reservés.</p></div>
+            </div>
+
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
